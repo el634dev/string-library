@@ -20,8 +20,7 @@ var Sentence = /** @class */ (function () {
     Sentence.prototype.allCaps = function (strings) {
         return strings.toUpperCase();
     };
-    Sentence.prototype.capitalizeWords = function (strings) {
-    };
     return Sentence;
 }());
 module.exports.Sentence = Sentence;
+//# sourceMappingURL=bundle.esm.js.map
