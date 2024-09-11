@@ -15,6 +15,7 @@ String library is a JS library which provides straight-forward, powerful functio
 ## Features
 - Capitalize the first letter
 - Capitalize all letters in a sentence
+- Remove whitespace
 
 ## Installing
 Packgae Manager
