@@ -26,7 +26,19 @@ class Sentence {
         return strings.toUpperCase()
     }
 
-     /**
+    /**
+     * Returns a string that shifts
+     * @param {Sentence} strings - Local variable used to help shift letters
+     * @returns {Sentence} - strings that are shifted
+    */
+    shift(strings: string): string {
+       const firstLetter = strings.slice(0, 1);
+       const letter = strings.slice(1);
+
+       return letter + firstLetter;
+    }
+    
+    /**
      * Checks if a string is empty, has whitespace only and matches \n or \r or \t
      * @param {Sentence} strings - Local variable used to help check the string
      * @returns {Sentence} - a boolean
