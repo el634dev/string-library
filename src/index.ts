@@ -27,6 +27,31 @@ class Sentence {
     }
 
     /**
+     * Returns a string with all letters capitalized with a join
+     * @param {Sentence} strings - Local variable used to split the words and capitalize every letter
+     * @returns {Sentence} - a string with all letters capitalized
+    */
+    capitalizeWords(strings: string): string {
+       const word = strings.split(' ');
+       const upperCase = word.map((word) => this.capitalize(word));
+
+       return upperCase.join(' ')
+    }
+
+    /**
+     * Returns a string with all letters capitalized with a join
+     * @param {Sentence} strings - Local variable used to split the words and capitalize every letter
+     * @returns {Sentence} - a string with all letters capitalized
+    */
+    removeExtraSpaces(strings: string): string {
+        const wordTrim = strings.trim();
+        const words = wordTrim.split(' ');
+
+        const filteredWords = words.filter((c) => c !== '')
+        return filteredWords.join(' ')
+    }
+
+    /**
      * Returns a string that is kebab case
      * @param {Sentence} strings - Local variable used to store the kebab case
      * @returns {Sentence} - strings that are kebab cased
