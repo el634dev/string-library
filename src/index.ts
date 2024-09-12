@@ -27,6 +27,50 @@ class Sentence {
     }
 
     /**
+     * Returns a string that is kebab case
+     * @param {Sentence} strings - Local variable used to store the kebab case
+     * @returns {Sentence} - strings that are kebab cased
+    */
+    kebobCase(strings: string, seperator = '-'): string {
+        const lower = strings.toLowerCase();
+        // Used to match sequences of word characters
+        const words = lower.match(/[\w]+/g)
+
+        // If words then join with an hyphen else return ''
+        return words ? words.join(seperator) : ''
+    }
+
+    /**
+     * Returns a string that is snake case
+     * @param {Sentence} strings - Local variable used to store the snake case
+     * @returns {Sentence} - strings that are snake cased
+    */
+    snakeCase(strings: string): string {
+        return this.kebobCase(strings, '_')
+    }
+
+    /**
+     * Returns a string that is camel case
+     * @param {Sentence} strings - Local variable used to convert to camel case
+     * @returns {Sentence} - strings that are camel cased
+    */
+    camelCase(strings: string): string {
+        const letter = strings.split(' ');
+        const camel = letter.map((letter, index) => {
+            // If index equals zero then keep it lower cased
+            if (index === 0) {
+                return letter.toLowerCase()
+            } else {
+                // If the index is not zero then capitalize the first letter
+                // and convert the rest to lower case
+                return letter.charAt(0).toUpperCase() + letter.slice(1).toLowerCase();
+            }
+        });
+ 
+        return camel.join('')
+    }
+
+    /**
      * Returns a string that shifts
      * @param {Sentence} strings - Local variable used to help shift letters
      * @returns {Sentence} - strings that are shifted
