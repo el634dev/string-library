@@ -23,7 +23,7 @@ String library is a JS/TS library which provides straight-forward, powerful func
 - Check if a string is empty, has whitespace or matches the \n or \r or \t characters
 
 # NPM 
-[NPM Page](https://www.npmjs.com/package/@evacuatesw/date-library)
+[NPM Page](https://www.npmjs.com/package/@evacuatesw/string-library)
 
 ## License
 [MIT](https://github.com/el634dev/string-library/blob/main/LICENSE.txt)
