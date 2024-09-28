@@ -1,6 +1,6 @@
 {
   "name": "string-ts-library",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Functions to help work with the String Object more smoothly",
   "main": "src/index.ts",
   "module": "dist/bundle.esm.js",
