@@ -12,3 +12,7 @@ console.log(capitalized)
 // Returns a string with all letters capitalized with a join
 const joinString = stringLib.capitalizeWords('a canal with a dog')
 console.log(joinString)
+
+//  Returns a string that begins with an uppercase letter and has a hashtag in the beginning
+const hashString = stringLib.makeHash('js')
+console.log(hashString)
